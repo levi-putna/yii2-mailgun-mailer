@@ -25,6 +25,22 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
+Configure the mailer component in the application configuration:
+
+```php
+'components' => [
+        'mailer' => [
+            'class' => 'katanyoo\mailer\Mailer',
+            'domain' => 'example.com',
+            'key' => 'key-somekey',
+            'tags' => ['yii'],
+            'enableTracking' => true,
+            'clicksTrackingMode' => true,
+            'enableOpensTracking' => true
+        ],
+    ]
+```
+
 Once the extension is installed, simply use it in your code by  :
 
 ```php
